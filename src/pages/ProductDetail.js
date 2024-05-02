@@ -47,11 +47,13 @@ export const ProductDetail = () => {
         </p>
         <div className="flex flex-wrap justify-between">
           <div className="max-w-xl my-3">
+            <a href={product.netlify}>
             <img
               className="rounded border-4 border-blue-700"
               src={product.image_local}
               alt={product.name}
             />
+            </a>
           </div>
           <div className="max-w-xl my-3">
             <p className="text-lg text-gray-900 dark:text-slate-200">
