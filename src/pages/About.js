@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
+
 import { FaCss3Alt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa';
 import { SiRedux, SiTailwindcss } from 'react-icons/si';
 import Image from '../assets/portfolioimage.png';
-import './About.css'; // Import CSS file for animations
 import { Link } from "react-router-dom";
+import { useTitle } from "../hooks/useTitle";
 
 export const About = () => {
-  const [showTechStack, setShowTechStack] = useState(false);
-  const [showTechStackText, setShowTechStackText] = useState(false);
+  useTitle("About");
 
-  const toggleTechStack = () => {
-    setShowTechStack(!showTechStack);
-    setShowTechStackText(!showTechStackText);
-  };
 
   return (
     <main className="flex flex-col items-center justify-center dark:text-slate-100">
@@ -30,9 +25,9 @@ export const About = () => {
         </p>
       </div>
       <div className="text-center">
-        <button  className="text-lg font-semibold text-blue-500 cursor-pointer">
+        <p  className="text-lg font-semibold text-blue-500 cursor-default">
           Tech Stack
-        </button>
+        </p>
         <div className="tech-stack-container">
           <div className="flex flex-wrap justify-center items-center mt-4">
               <>
@@ -44,7 +39,7 @@ export const About = () => {
                 <SiRedux className=" text-5xl text-purple-600 mx-2" />
               </>
           </div>
-            <p className="text-lg my-7 px-3">
+            <p className="text-lg my-7 px-3 dark:text-slate-300">
             In my arsenal, I harness a versatile toolkit for crafting digital wonders, comprising React for interactive UIs, JavaScript for web interactivity, Redux for streamlined state management, Tailwind CSS for efficient design, CSS for styling finesse, HTML for foundational markup, and PHP for dynamic server-side scripting.</p>
         </div>
       </div>
