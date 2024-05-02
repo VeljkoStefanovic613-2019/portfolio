@@ -7,7 +7,6 @@ export const Projects = () => {
 
   // Define state to store the products
   const [products, setProducts] = useState([]);
-
   // Fetch products from the API
   useEffect(() => {
     const fetchProducts = async () => {
