@@ -70,7 +70,7 @@ export const ProductDetail = () => {
             </p>
             <p className="text-lg text-gray-900 dark:text-slate-200">
               Netlify link:{" "}
-              <a href="https://codebook-vs.netlify.app/" className="text-blue-700 dark:text-blue-300 underline hover:underline">
+              <a href={product.netlify} className="text-blue-700 dark:text-blue-300 underline hover:underline">
                 {product.netlify}
               </a>
             </p>
