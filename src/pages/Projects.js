@@ -12,7 +12,7 @@ export const Projects = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:8000/products');
+        const response = await fetch(`${process.env.REACT_APP_HOST}/products`);
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }

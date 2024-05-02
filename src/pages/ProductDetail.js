@@ -9,7 +9,7 @@ export const ProductDetail = () => {
   const { id } = useParams();
 
   async function getProduct(id) {
-    const response = await fetch(`http://localhost:8000/products/${id}`);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/products/${id}`);
     if (!response.ok) {
       throw { message: response.statusText, status: response.status }; //eslint-disable-line
     }
