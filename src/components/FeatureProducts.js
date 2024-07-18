@@ -32,10 +32,7 @@ export const FeaturedProducts = () => {
 
   // Get the first 4 products
   const featuredProducts = products.slice(0, 4);
-
-  // Add the product at index 10 if it exists
-
-    featuredProducts.splice(featuredProducts.length, 0, products[9]);
+  featuredProducts.splice(featuredProducts.length, 0, products[9]);
 
 
   return (
