@@ -41,7 +41,9 @@ export const FeaturedProducts = () => {
       {loading ? (
         <div className="flex justify-center items-center h-32">
           <AiOutlineLoading className="animate-spin text-gray-500 text-3xl" /> {/* Loading icon */}
-          <span className="ml-2 dark:text-white">Fetching data... Try to refresh</span> {/* Loading message */}
+          <span className="ml-2 dark:text-white">
+            Fetching data... Backend is hosted for free on Render, so loading may take a moment.
+          </span>
         </div>
       ) : (
         <>
