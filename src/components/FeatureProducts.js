@@ -31,7 +31,7 @@ export const FeaturedProducts = () => {
   }, []);
 
   // Get the first 4 products
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.slice(0, 5);
   featuredProducts.splice(featuredProducts.length, 0, products[9]);
 
 
