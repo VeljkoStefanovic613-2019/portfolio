@@ -1,4 +1,3 @@
-
 import { FaCss3Alt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa';
 import { SiRedux, SiTailwindcss } from 'react-icons/si';
 import Image from '../assets/portfolioimage.png';
@@ -7,7 +6,6 @@ import { useTitle } from "../hooks/useTitle";
 
 export const About = () => {
   useTitle("About");
-
 
   return (
     <main className="flex flex-col items-center justify-center dark:text-slate-100">
@@ -25,7 +23,7 @@ export const About = () => {
         </p>
       </div>
       <div className="text-center">
-        <p  className="text-lg font-semibold text-blue-500 cursor-default">
+        <p className="text-lg font-semibold text-blue-500 cursor-default">
           Tech Stack
         </p>
         <div className="tech-stack-container">
@@ -34,19 +32,31 @@ export const About = () => {
                 <FaHtml5 className="text-5xl text-red-500 mx-2" />
                 <FaCss3Alt className=" text-5xl text-blue-500 mx-2" />
                 <SiTailwindcss className=" text-5xl text-blue-400 mx-2" />
-                <FaReact className=" text-5xl text-blue-300 mx-2" />
+                <FaReact className=" text-5xl text-blue-300 mx-2" title="React" />
                 <FaJsSquare className=" text-5xl text-yellow-500 mx-2" />
                 <SiRedux className=" text-5xl text-purple-600 mx-2" />
               </>
           </div>
-            <p className="text-lg my-7 px-3 dark:text-slate-300">
-            In my arsenal, I harness a versatile toolkit for crafting digital wonders, comprising React for interactive UIs, JavaScript for web interactivity, Redux for streamlined state management, Tailwind CSS for efficient design, CSS for styling finesse, HTML for foundational markup, and PHP for dynamic server-side scripting.</p>
+          <p className="text-lg my-7 px-3 dark:text-slate-300">
+            In my arsenal, I harness a versatile toolkit for crafting digital wonders, comprising React for interactive UIs, React Native for cross-platform mobile apps, JavaScript for web interactivity, Redux for streamlined state management, Tailwind CSS for efficient design, CSS for styling finesse, HTML for foundational markup, and PHP for dynamic server-side scripting.
+          </p>
         </div>
       </div>
       <div className="flex flex-row my-5">
-      <Link to="/projects" type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mb-2 mx-5 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" >Projects</Link>
-      <Link to="/contact" type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mb-2 mx-5 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" >Contact</Link>
-
+        <Link 
+          to="/projects" 
+          type="button" 
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mb-2 mx-5 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          Projects
+        </Link>
+        <Link 
+          to="/contact" 
+          type="button" 
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mb-2 mx-5 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          Contact
+        </Link>
       </div>
     </main>
   );
